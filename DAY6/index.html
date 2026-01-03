@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{
+        border: 1px solid black;
+    }
+     
+    form{
+        background-color: aqua;
+    }
+    button{
+        background-color: chocolate;
+    }
+        
+    
+</style>
+
+
+<body>
+    <form action="/submit" method="POST">
+<fieldset>
+<legend>Feedback Form</legend>
+<label for="name">Name:</label><br \>
+<input type="text" id="name" name="name" required /><br \>
+<label for="email">Email:</label><br \>
+<input type="email" id="email" name="email" required /><br \>
+<label for="message">Message:</label><br \>
+<textarea id="message" name="message" rows="4"></textarea><br \>
+<label>
+<input type="checkbox" name="subscribe" /> Accept policy.
+</label><br \>
+<label>Gender:</label><br \>
+<label><input type="radio" name="gender" value="male" />
+Male</label><br \>
+<label><input type="radio" name="gender" value="female" />
+Female</label>
+<br />
+<button type="submit">Send</button>
+</fieldset>
+</form>
+
+    
+</body>
+</html>
